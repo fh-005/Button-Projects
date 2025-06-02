@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgb(16,16,16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #Fff;
+    padding: 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
