@@ -1,29 +1,68 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-html, body{
+html,body{
     scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
     height: 100vh;
-    background-color: rgb(16,16,16);
+    width: 100%;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 a{
+    background-color: #444;
     text-decoration: none;
-    color: #fff;
-    border: 2px solid #Fff;
     padding: 2rem 5rem;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.5rem;
     position: relative;
     overflow: hidden;
+    transition: all .3s;
 }
 
+a::before{
+    content: "DOWNLOAD";
+    position: absolute;
+    background-color: white;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    align-content: center;
+    transform: translate(-100%,-100%);
+    transition: all 0.3s;
+}
 
+a:hover::before{
+    transform: translate(0%,0%);
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* transform: translateX(-50%);
+    transform: translateY(-50%); */
+    /* left:0; */
+    background: linear-gradient(45deg, #fff,rgba(153, 0, 255, 0.103),rgba(255, 0, 0, 0.253),rgba(255, 255, 0, 0.171),green );
+    z-index: ;
+    /* padding: 1rem; */
+
+    padding: 1rem;
+}
