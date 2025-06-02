@@ -61,7 +61,6 @@ a:after{
     transform: translateY(-50%); */
     /* left:0; */
     background: linear-gradient(45deg, #fff,rgba(153, 0, 255, 0.103),rgba(255, 0, 0, 0.253),rgba(255, 255, 0, 0.171),green );
-    z-index: ;
     /* padding: 1rem; */
 
     padding: 1rem;
